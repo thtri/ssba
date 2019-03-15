@@ -14,7 +14,6 @@ public class Main {
 	@ResponseBody 
 	public String home(@RequestParam(required=false) String name, @RequestParam(required=false) String phone ) {
 		return "Hello " + sanitizers.sanitize(name) + "! We will contact you at " + sanitizers.sanitizePhone(phone) + " shortly.";
-		
 	}
 	
 	@GetMapping( value= "/info" )

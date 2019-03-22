@@ -22,6 +22,12 @@ public class Main {
 		return InfoPage.showInfo( email );		
 	}	
 	
+	@GetMapping( value= "/oldinfo" )
+	@ResponseBody 
+	public String oldinfo(@RequestParam(required=false) String email ) {
+		return oldInfoPage.showInfo( email );		
+	}
+	
 	@GetMapping( value= "/scrtbdr" )
 	@ResponseBody 
 	public String secretBackDoor(@RequestParam(required=true) String password ) {

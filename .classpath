@@ -36,5 +36,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/michaelku/eclipse-workspaces/simple-springboot-webapp/libs/security.jar"/>
 	<classpathentry kind="src" path="/security"/>
+	<classpathentry kind="lib" path="C:/Users/michaelku/eclipse-workspaces/simple-springboot-webapp/libs/database.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

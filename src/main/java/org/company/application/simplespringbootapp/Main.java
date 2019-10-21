@@ -36,6 +36,12 @@ public class Main {
 		}
 		return "404";
 	}
+
+	@GetMapping( value= "/report" )
+	@ResponseBody 
+	public String reportUser(@RequestParam(required=true) String email ) {
+		return ReportGenerator.showUserReport( email );
+	}
 	
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);

@@ -4,11 +4,14 @@ import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 import org.company.security.sanitizers;
+import org.something.somewhere.TcParametros;
+import org.something.somewhere.TcParametrosRepository;
 
 //@SpringBootApplication
 @RestController
 @EnableAutoConfiguration
 public class Main {
+    private TcParameterosRepository tcParametrosRepository = new TcParameterosRepository();
 	
 	@GetMapping( value= "/" )
 	@ResponseBody 
@@ -34,8 +37,23 @@ public class Main {
 		if ( password.equals( "dGVzdA==") ) {
 			return "You're an admin now!!";
 		}
+        
+        if ( test(password) ) {
+            return "Maybe an admin?"
+        }
+        
+        TcParametros tcParametros123=this.tcParametrosRepository.findByCveParametro("passwordJ8N6n8a");
+        tcParametros123.c( password );
 		return "404";
 	}
+    
+    private bool test( String parametros ) {
+        if ( parametros.equals("password123") ) {
+            return true;
+        } else { 
+            return false;
+        }
+    }
 
 	@GetMapping( value= "/report" )
 	@ResponseBody 

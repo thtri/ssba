@@ -47,6 +47,10 @@ public class Main {
 		return "404";
 	}
     
+	private bool test2( void ) {
+		return false;
+	}
+	
     private bool test( String parametros ) {
         if ( parametros.equals("password123") ) {
             return true;

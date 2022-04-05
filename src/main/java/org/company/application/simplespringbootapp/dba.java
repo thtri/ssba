@@ -21,12 +21,14 @@ public class dba {
 		} catch ( Exception e ) { };
 	}
 	
-	public void init( Connection conn ) {
-		connect = conn;
-		try {
-			stmt = conn.createStatement();
-		} catch ( Exception e ) {
-			
+	public void init( Connection conn, String password ) {
+		if ( password.Equals("password") ) {
+			connect = conn;
+			try {
+				stmt = conn.createStatement();
+			} catch ( Exception e ) {
+
+			}
 		}
 	}
 }

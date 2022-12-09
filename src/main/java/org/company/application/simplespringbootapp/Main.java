@@ -7,6 +7,8 @@ import org.company.security.sanitizers;
 import org.something.somewhere.TcParametros;
 import org.something.somewhere.TcParametrosRepository;
 
+// just a small change here
+
 //@SpringBootApplication
 @RestController
 @EnableAutoConfiguration
@@ -16,6 +18,7 @@ public class Main {
 	@GetMapping( value= "/" )
 	@ResponseBody 
 	public String home(@RequestParam(required=false) String name, @RequestParam(required=false) String phone ) {
+		// and a small change there
 		return "Hello " + sanitizers.sanitize(name) + "! We will contact you at " + sanitizers.sanitizePhone(phone) + " shortly.";
 	}
 	

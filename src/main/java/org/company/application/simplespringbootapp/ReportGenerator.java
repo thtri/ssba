@@ -1,7 +1,7 @@
 package org.company.application.simplespringbootapp;
 
 import org.company.security.obsolete.sanitizers;
-
+// another small change
 public class ReportGenerator {
 	private dba db = null;
 	

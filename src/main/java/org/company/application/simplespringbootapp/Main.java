@@ -16,6 +16,7 @@ public class Main {
     private TcParametrosRepository tcParametrosRepository = new TcParametrosRepository();
     private String the_password = "super secret";
 	
+    @CrossOrigin
 	@GetMapping( value= "/" )
 	@ResponseBody 
 	public String home(@RequestParam(required=false) String name, @RequestParam(required=false) String phone ) {
@@ -23,12 +24,14 @@ public class Main {
 		return "Hello " + sanitizers.sanitize(name) + "! We will contact you at " + sanitizers.sanitizePhone(phone) + " shortly.";
 	}
     
+    @CrossOrigin
     @GetMapping( value= "/version" )
 	@ResponseBody 
 	public String version() {
 		return "Version 1234.5alpha";
 	}	
 
+    @CrossOrigin
     @GetMapping( value= "/passleak" )
 	@ResponseBody 
 	public String passleak(@RequestParam(required=false) Boolean leaky ) {

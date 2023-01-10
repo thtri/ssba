@@ -24,7 +24,7 @@ public class Main {
 		return "Hello " + sanitizers.sanitize(name) + "! We will contact you at " + sanitizers.sanitizePhone(phone) + " shortly.";
 	}
     
-    @CrossOrigin
+    @CrossOrigin(origins = "https://herpaderp", maxAge = 3600)
     @GetMapping( value= "/version" )
 	@ResponseBody 
 	public String version() {

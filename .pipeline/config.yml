@@ -1,0 +1,17 @@
+general:
+  buildTool: 'npm'
+  verbose: true
+steps:
+  checkmarxOneExecuteScan:
+    projectName: 'tht-reference-pipeline-node'
+    groupName: 'tht-group1'
+    presetName: 'Checkmarx Default'
+    branchName: 'master'
+    languageMode: 'primary'
+    projectCriticality: 3
+    serverUrl: 'https://checkmarx-dev.tools.sap'
+    iamUrl:  'https://checkmarx-dev.tools.sap'
+    tenant: 'sap-beta'
+    incremental: false
+    filterPattern:  '**/*, !**/*test*, !*.zip, !*.exe'
+    generatePdfReport: true

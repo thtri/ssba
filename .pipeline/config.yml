@@ -12,7 +12,7 @@ general:
   
 steps:
   checkmarxOneExecuteScan:
-    projectName: 'tht-reference-pipeline-node'
+    projectName: 'tht-ssba'
     groupName: 'tht-group1'
     presetName: 'Checkmarx Default'
     branchName: 'master'

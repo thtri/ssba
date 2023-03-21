@@ -4,11 +4,11 @@ general:
   
   vaultAppRoleTokenCredentialsId: 'tht-vault-approle-role-id'
   vaultAppRoleSecretTokenCredentialsId: 'tht-vault-approle-secret-id'
-  vaultBasePath: 'piper/THT-CXONE-DEV'
-  vaultPipelineName: 'thanh-test-cxone-dev'
-  vaultPath: 'piper/THT-CXONE-DEV'
-  vaultServerUrl: 'https://vault.tools.sap'
-  vaultNamespace: 'ies/sectest/checkmarxone/manualtesting'
+#   vaultBasePath: 'piper/THT-CXONE-DEV'
+#   vaultPipelineName: 'thanh-test-cxone-dev'
+#   vaultPath: 'piper/THT-CXONE-DEV'
+#   vaultServerUrl: 'https://vault.tools.sap'
+#   vaultNamespace: 'ies/sectest/checkmarxone/manualtesting'
   
 steps:
   checkmarxOneExecuteScan:

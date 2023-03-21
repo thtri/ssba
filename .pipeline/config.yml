@@ -12,7 +12,7 @@ general:
   
 steps:
   checkmarxOneExecuteScan:
-    projectName: 'tht-ssba'
+    projectName: 'tht-ssba-jaas'
     groupName: 'tht-group1'
     presetName: 'Checkmarx Default'
     branchName: 'master'

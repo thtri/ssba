@@ -15,7 +15,7 @@ steps:
     projectName: 'tht-ssba-jaas'
     groupName: 'tht-group1'
     presetName: 'Checkmarx Default'
-    branchName: 'master'
+    branch: 'master'
     languageMode: 'primary'
     projectCriticality: 3
     serverUrl: 'https://checkmarx-dev.tools.sap'

@@ -22,5 +22,6 @@ steps:
     iamUrl:  'https://checkmarx-dev.tools.sap'
     tenant: 'sap-beta'
     incremental: false
-    filterPattern:  '**/*, !**/*test*, !*.zip, !*.exe, !sap-piper, !piper, !cache/*'
+    #filterPattern:  '**/*, !**/*test*, !*.zip, !*.exe, !sap-piper, !piper, !cache/*'
+    filterPattern:  '!**/node_modules/**, !**/.xmake/**, !**/*_test.go, !**/vendor/**/*.go, **/*.html, **/*.xml, **/*.go, **/*.py, **/*.js, **/*.scala, **/*.ts'
     generatePdfReport: true

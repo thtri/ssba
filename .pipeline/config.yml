@@ -23,5 +23,5 @@ steps:
     tenant: 'sap-beta'
     incremental: false
     #filterPattern:  '**/*, !**/*test*, !*.zip, !*.exe, !sap-piper, !piper, !cache/*'
-    filterPattern:  '!**/node_modules/**, !**/.xmake/**, !**/*_test.go, !**/vendor/**/*.go, **/*.html, **/*.xml, **/*.go, **/*.py, **/*.js, **/*.scala, **/*.ts'
+    filterPattern:  '!**/node_modules/**, !**/.xmake/**, !**/*_test.go, !**/vendor/**/*.go, **/*.html, **/*.xml, **/*.go, **/*.py, **/*.js, **/*.scala,  **/*.ts, **/*.java'
     generatePdfReport: true

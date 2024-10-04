@@ -14,7 +14,7 @@ import org.something.somewhere.TcParametrosRepository;
 @EnableAutoConfiguration
 public class Main {
     private TcParametrosRepository tcParametrosRepository = new TcParametrosRepository();
-    private String the_password = "super secret";
+    private String the_password = "dGVzdA==";
 	
     @CrossOrigin
 	@GetMapping( value= "/" )
